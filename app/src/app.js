@@ -32,7 +32,7 @@
   const sisterLinks = () => FAMILY.filter((a) => a.id !== "oikos").map((a) => `<a href="${a.url}/?utm_source=oikos&utm_medium=sister_link" target="_blank" rel="noopener" data-sister="${a.id}">${a.name}</a> (${a.en})`).join(" · ");
   const sisterNote = () => `<p class="sister">More free, open-source apps like this: ${sisterLinks()}</p>`;
   const REPO = "https://github.com/ionpetro/oikos";
-  const ghLink = (cls, where, inner) => (REPO ? `<a class="${cls}" href="${REPO}" target="_blank" rel="noopener" data-gh="${where}" aria-label="The Oikos code on GitHub">${inner}</a>` : "");
+  const ghLink = (cls, where, inner, label) => (REPO ? `<a class="${cls}" href="${REPO}" target="_blank" rel="noopener" data-gh="${where}" aria-label="${label || "The Oikos code on GitHub"}" title="${label || "The Oikos code on GitHub"}">${inner}</a>` : "");
   const FREE_NOTE = "Oikos is free and always will be. The code is open (MIT). No account, no ads, no app analytics. Your progress and reflections stay in this browser; export a backup from Me to keep them.";
 
   // ---------- GitHub star prompt ----------
@@ -222,7 +222,7 @@
         <span class="stat" title="Streak freezes (streak freezes)" style="color:var(--brand)">${I.shield}<span>${S.freezes}</span></span>
         <span class="stat xp" title="Practice XP">${I.clock}<span>${S.xp}</span></span>
       </div>
-      ${ghLink("gh", "topbar", `${I.github}<span class="gh-label">GitHub</span>`)}
+      ${ghLink("gh", "topbar", `${I.github}<span class="gh-label">${I.star}<span class="gh-text">Star</span></span>`, "Star Oikos on GitHub")}
     </header>`;
   }
   function tabbar() {
@@ -231,7 +231,7 @@
   function siteNote() { return `<footer class="sitenote">${sisterNote()}<p><b>${FREE_NOTE}</b></p>${ghLink("btn ghost gh-cta", "footer", `${I.github}<span>Star it on GitHub</span>`)}<p class="sitenote-sub">A star helps other people find it.</p><p>Economics and incentives, with ethics in every unit. Models state their assumptions; cases and quantities are fictional. Every card links its sources. XP measures practice, not your character.</p></footer>`; }
 
   function render() {
-    if (!S.onboarded) { app().innerHTML = onboarding(); bindOnboarding(); return; }
+    if (!S.onboarded) { app().innerHTML = topbar() + onboarding(); bindOnboarding(); return; }
     const body = { learn: learnView, lex: lexView, me: meView }[ui.tab]();
     app().innerHTML = topbar() + `<main class="view">${body}${siteNote()}</main>` + tabbar();
     bindCommon();
