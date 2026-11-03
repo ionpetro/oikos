@@ -216,11 +216,13 @@
   function topbar() {
     const t = today(), st = E.liveStreak(S, t), active = S.lastDay === t;
     return `<header class="topbar">
+      <div class="topbar-main">
       <div class="wordmark">Oikos<small>FOLLOW THE INCENTIVE</small></div>
       <div class="stats">
         <span class="stat flame ${active ? "" : "cold"}" title="${active ? "Your streak is safe for today" : "Do one sitting to keep the streak"}">${I.flame}<span>${st}</span></span>
         <span class="stat" title="Streak freezes (streak freezes)" style="color:var(--brand)">${I.shield}<span>${S.freezes}</span></span>
         <span class="stat xp" title="Practice XP">${I.clock}<span>${S.xp}</span></span>
+      </div>
       </div>
       ${ghLink("gh", "topbar", `${I.github}<span class="gh-label">${I.star}<span class="gh-text">Star</span></span>`, "Star Oikos on GitHub")}
     </header>`;
