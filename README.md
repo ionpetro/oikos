@@ -4,6 +4,19 @@
 
 An economics-and-incentives learning experience, with ethics throughout. Oikos is a new sibling of the Panhellenic course family: Carpe → Objection → Agora → Oikos. It retains the family's actual interface and semantic learning engine: a centered phone-width path, raised lesson stones, expressive mascot, short sittings, varied retrieval, cold transfer and spaced review. Pip, a beaver, guides the new course.
 
+## Open source, and the family
+
+Oikos is free and open source (MIT). **If it helps you, please [star the repo](https://github.com/ionpetro/oikos)**: a star helps other people find it. Corrections and pull requests are welcome.
+
+Oikos is one of six free, open-source learning apps built the same way (short daily lessons, spaced review, no account):
+
+- **Skepsis**: the Greek hiding in everyday English. [Play](https://skepsis-greek.vercel.app) · [GitHub](https://github.com/ionpetro/skepsis)
+- **Carpe**: Latin for Greece's national exams. [Play](https://carpe-latin.vercel.app) · [GitHub](https://github.com/ionpetro/carpe)
+- **Gnothi**: Ancient Greek for Greece's national exams. [Play](https://gnothi-greek.vercel.app) · [GitHub](https://github.com/ionpetro/gnothi)
+- **Objection**: prep for the US bar exam (MBE). [Play](https://objection-bar.vercel.app) · [GitHub](https://github.com/ionpetro/objection)
+- **Agora**: sales and negotiation, with ethics. [Play](https://agora-sales.vercel.app) · [GitHub](https://github.com/ionpetro/agora)
+- **Oikos** (this one): economics and incentives. [Play](https://oikos-azure-five.vercel.app) · [GitHub](https://github.com/ionpetro/oikos)
+
 ## Run locally
 
 No application dependencies to install. A recent Node.js and Python 3 are sufficient.
@@ -16,6 +29,20 @@ npm run dev
 ```
 
 The local course is served at `http://127.0.0.1:4390/`; the complete static build is in `dist/`. Production builds require all twelve units. The authoring fixture is excluded.
+
+## Vercel deployment
+
+Live course: https://oikos-azure-five.vercel.app
+
+The Vercel project is `oikos` in `ion-petropoulos-projects`. `vercel.json` builds the course with `node app/build.mjs` and serves only `dist/`. `.vercelignore` excludes local work, research, test files and the separate Sites configuration from upload.
+
+From this linked checkout, deploy an update with:
+
+```sh
+vercel deploy --prod --scope ion-petropoulos-projects
+```
+
+The Vercel course opens without a sign-in. Learning progress is local to each domain; use Me → Export/Import to move a backup between hosts.
 
 ## Course
 

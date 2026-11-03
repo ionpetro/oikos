@@ -1,0 +1,11 @@
+.git/
+.openai/
+.vercel/
+.env*
+node_modules/
+dist/
+work/
+research/
+app/test/
+*.log
+.DS_Store

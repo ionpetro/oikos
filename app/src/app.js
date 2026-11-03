@@ -18,9 +18,41 @@
 
   /** Product analytics. Only the public website loads PostHog (see site.mjs); elsewhere this does nothing. */
   function track() { /* This local-first edition has no analytics. */ }
-  const REPO = ""; // set to the public repository URL once one exists; the GitHub buttons render only then
+  // ---------- sister apps ----------
+  /** The family of free, open-source learning apps. Keep this list the same in Skepsis, Carpe, Gnothi, Objection, Agora and Oikos (app.js and site.mjs). */
+  const FAMILY = [
+    { id: "skepsis", name: "Skepsis", url: "https://skepsis-greek.vercel.app", repo: "https://github.com/ionpetro/skepsis", en: "the Greek hiding in everyday English", el: "οι ελληνικές ρίζες που κρύβονται στα αγγλικά" },
+    { id: "carpe", name: "Carpe", url: "https://carpe-latin.vercel.app", repo: "https://github.com/ionpetro/carpe", en: "Latin for Greece's national exams", el: "Λατινικά για τις Πανελλαδικές" },
+    { id: "gnothi", name: "Gnothi", url: "https://gnothi-greek.vercel.app", repo: "https://github.com/ionpetro/gnothi", en: "Ancient Greek for Greece's national exams", el: "Αρχαία Ελληνικά για τις Πανελλαδικές" },
+    { id: "objection", name: "Objection", url: "https://objection-bar.vercel.app", repo: "https://github.com/ionpetro/objection", en: "prep for the US bar exam", el: "προετοιμασία για τις εξετάσεις δικηγόρων των ΗΠΑ" },
+    { id: "agora", name: "Agora", url: "https://agora-sales.vercel.app", repo: "https://github.com/ionpetro/agora", en: "sales and negotiation, with ethics", el: "πωλήσεις και διαπραγμάτευση, με ηθική" },
+    { id: "oikos", name: "Oikos", url: "https://oikos-azure-five.vercel.app", repo: "https://github.com/ionpetro/oikos", en: "economics and incentives", el: "οικονομικά και κίνητρα" },
+  ];
+  /** Links to the other apps in the family, tagged so each app's analytics shows where visitors came from. */
+  const sisterLinks = () => FAMILY.filter((a) => a.id !== "oikos").map((a) => `<a href="${a.url}/?utm_source=oikos&utm_medium=sister_link" target="_blank" rel="noopener" data-sister="${a.id}">${a.name}</a> (${a.en})`).join(" · ");
+  const sisterNote = () => `<p class="sister">More free, open-source apps like this: ${sisterLinks()}</p>`;
+  const REPO = "https://github.com/ionpetro/oikos";
   const ghLink = (cls, where, inner) => (REPO ? `<a class="${cls}" href="${REPO}" target="_blank" rel="noopener" data-gh="${where}" aria-label="The Oikos code on GitHub">${inner}</a>` : "");
-  const FREE_NOTE = "Your learning progress and reflections stay in this browser. Export a backup from Me to keep them. No ads or app analytics.";
+  const FREE_NOTE = "Oikos is free and always will be. The code is open (MIT). No account, no ads, no app analytics. Your progress and reflections stay in this browser; export a backup from Me to keep them.";
+
+  // ---------- GitHub star prompt ----------
+  // Asked on the lesson-finished screen, never as a pop-up (same rules as Skepsis): ask after the
+  // first finished lesson; if "Not now", ask once more on a later day after a perfect lesson
+  // or the daily goal. Never more than twice, never again after a click.
+  const STAR_KEY = "oikos-star-v1";
+  const starState = () => { try { return JSON.parse(localStorage.getItem(STAR_KEY) || "{}") || {}; } catch { return {}; } };
+  const saveStar = (st) => { try { localStorage.setItem(STAR_KEY, JSON.stringify(st)); } catch { /* storage blocked: we just may ask again */ } };
+  /** Counts this finished lesson and returns why to ask now ("first_lesson", "perfect", "daily_goal"), or null. */
+  function starMoment({ perfect, goalHit }) {
+    const st = starState();
+    st.lessons = (st.lessons || 0) + 1;
+    let why = null;
+    if (!st.clicked && (st.asks || 0) === 0) why = "first_lesson";
+    else if (!st.clicked && st.asks === 1 && st.lastAsk !== today() && (perfect || goalHit)) why = perfect ? "perfect" : "daily_goal";
+    if (why) { st.asks = (st.asks || 0) + 1; st.lastAsk = today(); }
+    saveStar(st);
+    return why ? { why, lessons: st.lessons, ask: st.asks } : null;
+  }
 
   // ---------- icons ----------
   const I = {
@@ -196,7 +228,7 @@
   function tabbar() {
     return `<nav class="tabbar" aria-label="Sections"><div class="tabbar-inner">${TABS.map((t) => `<button class="tab" data-tab="${t.id}" ${ui.tab === t.id ? 'aria-current="page"' : ""}>${t.icon}<span>${t.label}</span></button>`).join("")}</div></nav>`;
   }
-  function siteNote() { return `<footer class="sitenote"><p><b>${FREE_NOTE}</b></p><p>Economics and incentives, with ethics in every unit. Models state their assumptions; cases and quantities are fictional. Every card links its sources. XP measures practice, not your character.</p></footer>`; }
+  function siteNote() { return `<footer class="sitenote">${sisterNote()}<p><b>${FREE_NOTE}</b></p>${ghLink("btn ghost gh-cta", "footer", `${I.github}<span>Star it on GitHub</span>`)}<p class="sitenote-sub">A star helps other people find it.</p><p>Economics and incentives, with ethics in every unit. Models state their assumptions; cases and quantities are fictional. Every card links its sources. XP measures practice, not your character.</p></footer>`; }
 
   function render() {
     if (!S.onboarded) { app().innerHTML = onboarding(); bindOnboarding(); return; }
@@ -389,6 +421,7 @@
   function bindCommon() {
     const root = app();
     $$("[data-gh]", root).forEach((a) => a.addEventListener("click", () => track("github_clicked", { where: a.dataset.gh })));
+    $$("[data-sister]", root).forEach((a) => a.addEventListener("click", () => track("sister_app_clicked", { to: a.dataset.sister })));
     $$("[data-tab]", root).forEach((b) => b.addEventListener("click", () => setTab(b.dataset.tab)));
     $$("[data-start]", root).forEach((b) => b.addEventListener("click", () => startNode(E.pathNodes(IX).find((n) => n.id === b.dataset.start))));
     $$("[data-goal]", root).forEach((b) => b.addEventListener("click", () => { const from = S.goal; S.goal = +b.dataset.goal; if (from !== S.goal) track("goal_changed", { from_xp: from, to_xp: S.goal }); save(); render(); }));
@@ -917,6 +950,7 @@
     const relatedLabs = Models.LABS.filter(l => relatedIds.includes(l.id));
     const acc = run.scored ? Math.round((run.right / run.scored) * 100) : 100;
     const secs = Math.round((Date.now() - run.start) / 1000);
+    const star = starMoment({ perfect, goalHit: prevTodayXp < S.goal && (S.days[t] || 0) >= S.goal });
     sfx.done(); if (perfect || fresh.length) confetti();
     const streakLine = !wasActive && st.streakUp ? (st.usedFreeze ? `A freeze saved the streak. ${plural(S.streak, "day", "days")} of practice.` : S.streak > 1 ? `${plural(S.streak, "day", "days")} of practice.` : "Day 1 of practice. See you tomorrow.") : `Streak: ${plural(S.streak, "day", "days")}.`;
     shell(`<div class="results">
@@ -933,11 +967,13 @@
       ${run.node && run.mode === "lesson" && IX.lessons.find(l => l.id === run.node.id)?.fieldwork ? `<div class="rulebox" style="text-align:left"><b>Try it at work</b><p>${esc(IX.lessons.find(l => l.id === run.node.id).fieldwork)}</p><small>Optional reflection. Nothing to submit or score.</small></div>` : ""}
       ${relatedLabs.length ? `<div class="card col" style="text-align:left"><div class="eyebrow">Explore the idea</div><p>Try changing the rules in a related experiment. No timer or score.</p>${relatedLabs.map(l=>`<button class="btn ghost" data-result-lab="${esc(l.id)}">${esc(l.title)}</button>`).join("")}</div>` : ""}
       ${fresh.map((b) => `<div class="newbadge">${seal(b.name[0]).replace("<svg", '<svg width="40" height="40"')}<div>New badge: ${esc(b.name)}<br><span class="muted">${esc(b.desc)}</span></div></div>`).join("")}
+      ${star ? starCard() : ""}
     </div>`, footerBtn("Continue", "gold"));
     $$("[data-result-lab]").forEach(b=>b.addEventListener("click",()=>startLab(b.dataset.resultLab)));
     $(".progress > i") && ($(".progress > i").style.width = "100%");
     $("#next").addEventListener("click", closeRun);
     $("#next").focus();
+    if (star) bindStarCard(star);
   }
 
   // ---------- mixed practice: answers hidden until submission; untimed, with flag and return ----------
