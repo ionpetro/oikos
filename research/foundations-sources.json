@@ -1,0 +1,121 @@
+[
+  {
+    "id": "F1",
+    "title": "Economic decisions: Opportunity costs, economic rents, and incentives",
+    "publisher": "CORE Econ",
+    "url": "https://books.core-econ.org/the-economy/microeconomics/02-technology-incentives-02-economic-decisions.html",
+    "note": "2023. Next-best feasible alternative and direct-cost distinction; simplified valuation, not proof that every value is monetary."
+  },
+  {
+    "id": "F2",
+    "title": "How Individuals Make Choices Based on Their Budget Constraint",
+    "publisher": "OpenStax / Rice University",
+    "url": "https://openstax.org/books/principles-economics-3e/pages/2-1-how-individuals-make-choices-based-on-their-budget-constraint",
+    "note": "2022. Marginal and sunk-cost reasoning; simplified choices, not universal diminishing benefits or a complete account of behavior."
+  },
+  {
+    "id": "F3",
+    "title": "Economic models: How to see more by looking at less",
+    "publisher": "CORE Econ",
+    "url": "https://books.core-econ.org/the-economy/microeconomics/02-technology-incentives-08-economic-models.html",
+    "note": "2023. Models isolate mechanisms and assumptions; logical implications are not automatically empirical identification."
+  },
+  {
+    "id": "F4",
+    "title": "Pay for Performance and Beyond",
+    "publisher": "Bengt Holmström, Nobel lecture hosted by MIT Economics",
+    "url": "https://economics.mit.edu/research/publications/nobel-prize-lecture-pay-performance-and-beyond",
+    "note": "2016. Multitasking, measurement, incentives as a system; theoretical conditions matter, no universal bonus prescription. Read especially PDF pp.15–19."
+  },
+  {
+    "id": "F5",
+    "title": "A Fine Is a Price",
+    "publisher": "Uri Gneezy and Aldo Rustichini, Journal of Legal Studies; author copy at UC San Diego",
+    "url": "https://rady.ucsd.edu/_files/faculty-research/uri-gneezy/fine.pdf",
+    "note": "2000. A bounded fine intervention can change behavior unexpectedly; ten centers over twenty weeks, not a universal deterrence reversal. Read PDF pp.1–4."
+  },
+  {
+    "id": "F6",
+    "title": "Getting the work done: Contracts, principals, and agents",
+    "publisher": "CORE Econ",
+    "url": "https://books.core-econ.org/the-economy/microeconomics/06-firm-and-employees-06-contracts-principals-agents.html",
+    "note": "2023. Incomplete contracting and observable output; a model, not a moral description of employees or jurisdiction-specific legal advice."
+  },
+  {
+    "id": "F7",
+    "title": "Demand, Supply, and Equilibrium in Markets for Goods and Services",
+    "publisher": "OpenStax / Rice University",
+    "url": "https://openstax.org/books/principles-economics-3e/pages/3-1-demand-supply-and-equilibrium-in-markets-for-goods-and-services",
+    "note": "2022. Schedules, quantities, clearing; other things held equal, willingness/ability to pay is not moral need."
+  },
+  {
+    "id": "F8",
+    "title": "Shifts in Demand and Supply for Goods and Services",
+    "publisher": "OpenStax / Rice University",
+    "url": "https://openstax.org/books/principles-economics-3e/pages/3-2-shifts-in-demand-and-supply-for-goods-and-services",
+    "note": "2022. Movement versus shift; actual simultaneous changes may not identify one cause."
+  },
+  {
+    "id": "F9",
+    "title": "Supply, demand, and competitive equilibrium: Is this a good model?",
+    "publisher": "CORE Econ",
+    "url": "https://books.core-econ.org/the-economy/microeconomics/08-supply-demand-10-supply-demand-competitive-equilibrium.html",
+    "note": "2023. Price-taking benchmark and applicability conditions; idealized conditions need checking."
+  },
+  {
+    "id": "F10",
+    "title": "Price Elasticity of Demand and Price Elasticity of Supply",
+    "publisher": "OpenStax / Rice University",
+    "url": "https://openstax.org/books/principles-economics-3e/pages/5-1-price-elasticity-of-demand-and-price-elasticity-of-supply",
+    "note": "2022. Percentage responsiveness and midpoint convention; interval elasticity is not a constant for every price range."
+  },
+  {
+    "id": "F11",
+    "title": "Elasticity and Pricing",
+    "publisher": "OpenStax / Rice University",
+    "url": "https://openstax.org/books/principles-economics-3e/pages/5-3-elasticity-and-pricing",
+    "note": "2022. Revenue relationships and competitive tax incidence; do not reuse its cigarette-specific elasticities as universal or current estimates."
+  },
+  {
+    "id": "F12",
+    "title": "The effect of a tax",
+    "publisher": "CORE Econ",
+    "url": "https://books.core-econ.org/the-economy/microeconomics/08-supply-demand-12-effect-of-tax.html",
+    "note": "2023. Prices, quantities, and revenue in a tax model; per-unit and percentage taxes are distinct, welfare depends on included effects."
+  },
+  {
+    "id": "F13",
+    "title": "The external effects of pollution: Private and social costs and benefits",
+    "publisher": "CORE Econ",
+    "url": "https://books.core-econ.org/the-economy/microeconomics/10-market-successes-failures-02-pollution-effects.html",
+    "note": "2023. Private/external/social margins; monetary aggregation and uniqueness depend on assumptions, discussed explicitly in its extension."
+  },
+  {
+    "id": "F14",
+    "title": "Solving the problem: Regulation, taxation, and compensation",
+    "publisher": "CORE Econ",
+    "url": "https://books.core-econ.org/the-economy/microeconomics/10-market-successes-failures-04-regulation-taxation-compensation.html",
+    "note": "2023. Alternative responses, measurement and implementation limits; an efficient result can still be unfair."
+  },
+  {
+    "id": "F15",
+    "title": "Evaluating institutions and outcomes: Fairness",
+    "publisher": "CORE Econ",
+    "url": "https://books.core-econ.org/the-economy/microeconomics/05-the-rules-of-the-game-03-evaluating-institutions-outcomes.html",
+    "note": "2023. Separates Pareto comparisons and procedural/substantive fairness; values are not a uniquely scored optimum."
+  },
+  {
+    "id": "F16",
+    "title": "Beyond Markets and States: Polycentric Governance of Complex Economic Systems",
+    "publisher": "Elinor Ostrom; Indiana University Digital Library of the Commons",
+    "url": "https://dlc.dlib.indiana.edu/dlc/items/484f4147-bdce-4d55-9b8d-fe61f3b2d37b",
+    "note": "2009 revised lecture draft. Institutional diversity and fit to settings; source is marked revised draft, not a universal recipe or final journal text. Linked PDF read, especially pp.1–3 and25."
+  },
+  {
+    "id": "F17",
+    "title": "The Economics of Pollution",
+    "publisher": "OpenStax / Rice University",
+    "url": "https://openstax.org/books/principles-economics-3e/pages/12-1-the-economics-of-pollution",
+    "note": "2022. Positive and negative externalities; use conceptual distinctions, not its changing emissions statistics or historical examples as fresh estimates."
+  }
+]

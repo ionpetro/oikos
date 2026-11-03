@@ -1,0 +1,100 @@
+[
+  {
+    "id": "I1",
+    "title": "Public good games and cooperation (The Economy 2.0, §4.6)",
+    "publisher": "CORE Econ · 2023",
+    "url": "https://books.core-econ.org/the-economy/microeconomics/04-strategic-interactions-06-public-good-games.html",
+    "note": "Supports the distinction between a contribution's private return and its total benefit to a group in an explicit public-goods game. A monetary-payoff model is not proof that all people free-ride; preferences, communication and institutions can differ. Oikos numbers are fictional."
+  },
+  {
+    "id": "I2",
+    "title": "Public goods and bads, open access, and shared resources (The Economy 2.0, §10.7)",
+    "publisher": "CORE Econ · 2023",
+    "url": "https://books.core-econ.org/the-economy/microeconomics/10-market-successes-failures-07-open-access-shared-resources.html",
+    "note": "Supports rivalry, excludability and resource-governance distinctions. CORE sometimes uses public good for non-rival goods generally; Oikos explicitly uses pure public good for non-rival/non-excludable goods and club good when exclusion is feasible. Congestion and access technology can change classification. Government provision does not define a public good."
+  },
+  {
+    "id": "I3",
+    "title": "Beyond Markets and States: Polycentric Governance of Complex Economic Systems",
+    "publisher": "Elinor Ostrom · Nobel lecture 2009, published 2010 · university-hosted copy",
+    "url": "https://www.canr.msu.edu/fsp/outreach/presentations/ostrom_nobel_lecture_27_october_2016.pdf",
+    "note": "Primary lecture, particularly pp. 418–425: distinguishes common-pool resources from property regimes and examines participation, monitoring, locally fitted rules and conflict resolution. Evidence challenges inevitable commons collapse; it does not establish a universally best ownership form or a sufficient checklist. Original Nobel URL was blocked during this check; this Michigan State copy was opened."
+  },
+  {
+    "id": "I4",
+    "title": "Hidden attributes and adverse selection (The Economy 2.0, §10.10)",
+    "publisher": "CORE Econ · 2023",
+    "url": "https://books.core-econ.org/the-economy/microeconomics/10-market-successes-failures-10-hidden-attributes.html",
+    "note": "Supports how hidden quality can change which sellers participate at a pooled price. This is a conditional model, not a prediction that every second-hand or insurance market collapses. Verification, guarantees, reputation and participation conditions matter; hidden information is not itself evidence of dishonesty."
+  },
+  {
+    "id": "I5",
+    "title": "Principal–agent relationships, hidden actions, and incomplete contracts (The Economy 2.0, §10.8)",
+    "publisher": "CORE Econ · 2023",
+    "url": "https://books.core-econ.org/the-economy/microeconomics/10-market-successes-failures-08-principal-agent-relationships.html",
+    "note": "Supports hidden-action and unverifiability problems when interests differ and actions affect another party. Moral hazard names an incentive/information problem, not a moral diagnosis. A bad result alone does not reveal effort or intent. Model assumptions about worker preferences must not be asserted as facts about all workers."
+  },
+  {
+    "id": "I6",
+    "title": "Influencing market power, and competition policy (The Economy 2.0, §7.12)",
+    "publisher": "CORE Econ · 2023",
+    "url": "https://books.core-econ.org/the-economy/microeconomics/07-firm-and-customers-12-influencing-market-power.html",
+    "note": "Supports examining substitutes, entry, exclusion and potential efficiencies when assessing market power. High share alone is not a complete diagnosis or a legal verdict. Historical examples are not current legal guidance. Oikos compares stated fictional prices, quantities and costs, not inferred market-wide welfare from revenue alone."
+  },
+  {
+    "id": "I7",
+    "title": "Monopsony and concentration in the labour market, chapter 3",
+    "publisher": "OECD Employment Outlook · 2022",
+    "url": "https://www.oecd.org/content/dam/oecd/en/publications/reports/2022/09/oecd-employment-outlook-2022_7a5a73b3/1bb305a6-en.pdf",
+    "note": "Supports employer wage-setting power through concentration, search frictions and differentiated job conditions. Concentration is an imperfect proxy; countervailing worker power matters. Empirical magnitudes vary by market and method. A minimum wage can increase employment in some monopsony models, but neither a positive nor negative effect is universal. No dated concentration thresholds are taught as current law."
+  },
+  {
+    "id": "I8",
+    "title": "Pay for Performance and Beyond",
+    "publisher": "Bengt Holmström · Nobel lecture 2016",
+    "url": "https://www.nobelprize.org/uploads/2018/06/holmstrom-lecture.pdf",
+    "note": "Primary lecture supports the interaction of incentives, risk, measurement and multiple tasks, especially section IV on multitasking. Rewarding a measured task can displace valuable competing work; weaker explicit rewards can sometimes help. This is conditional theory and institutional analysis, not a claim that all bonuses fail or fixed pay always works."
+  },
+  {
+    "id": "I9",
+    "title": "Categorizing Variants of Goodhart's Law",
+    "publisher": "David Manheim and Scott Garrabrant · arXiv preprint, first posted 2018",
+    "url": "https://arxiv.org/abs/1803.04585",
+    "note": "Primary conceptual treatment distinguishes ways optimization can separate a proxy from its goal, including selection on noise and strategic responses. Use as a diagnostic warning, not a universal empirical law or proof that measurement becomes useless. The live page includes a later revision; the catchy popular aphorism is not quoted as Goodhart's original wording."
+  },
+  {
+    "id": "I10",
+    "title": "Evaluating institutions and outcomes: Fairness (The Economy 2.0, §5.3)",
+    "publisher": "CORE Econ · 2023",
+    "url": "https://books.core-econ.org/the-economy/microeconomics/05-the-rules-of-the-game-03-evaluating-institutions-outcomes.html",
+    "note": "Supports separating Pareto comparisons from substantive and procedural judgments of fairness. Equal shares, need, contribution, rights and procedure can give different assessments. Oikos can score recognition or application of an explicitly agreed criterion, not select one conception of justice as universally correct."
+  },
+  {
+    "id": "I11",
+    "title": "Evaluating outcomes: The Pareto criterion (The Economy 2.0, §4.5)",
+    "publisher": "CORE Econ · 2023",
+    "url": "https://books.core-econ.org/the-economy/microeconomics/04-strategic-interactions-05-pareto-criterion.html",
+    "note": "Supports Pareto improvement and efficiency as distinct concepts. The criterion often leaves allocations unranked and does not establish fairness. A larger total monetary surplus is not automatically a Pareto improvement; potential compensation must not be mistaken for compensation actually paid."
+  },
+  {
+    "id": "I12",
+    "title": "Measuring economic inequality: The Gini coefficient (The Economy 2.0, §5.12)",
+    "publisher": "CORE Econ · 2023",
+    "url": "https://books.core-econ.org/the-economy/microeconomics/05-the-rules-of-the-game-12-measuring-economic-inequality.html",
+    "note": "Supports examining a distribution rather than its total alone. Any numerical comparison must specify income versus wealth, population and period. Do not infer poverty or procedural fairness from one inequality index. The page uses a small-population Gini normalization; Oikos avoids Gini calculation drills unless that convention is explicitly taught."
+  },
+  {
+    "id": "I13",
+    "title": "The Green Book: Appraisal and evaluation in central government",
+    "publisher": "HM Treasury · 2026 edition",
+    "url": "https://www.gov.uk/government/publications/the-green-book--2/the-green-book-2026",
+    "note": "Supports comparing options, social resource costs, non-monetised effects, distribution, uncertainty and public budgets separately. Transfers between included parties are not themselves additional resource production; administration and behaviour can create real costs. UK appraisal guidance is not a universal ethical ranking or a legal rule for learners in other jurisdictions."
+  },
+  {
+    "id": "I14",
+    "title": "Magenta Book: Central Government guidance on evaluation",
+    "publisher": "HM Treasury and Evaluation Task Force · 2026 edition",
+    "url": "https://www.gov.uk/government/publications/the-magenta-book/magenta-book-central-government-guidance-on-evaluation-html",
+    "note": "Supports planning evaluation early, counterfactual reasoning, process/impact/value-for-money questions, and context-specific causal assumptions. Randomisation reduces selection bias but does not guarantee balance, perfect implementation or universal transfer. A difference-in-differences calculation requires assumptions about the untreated trend; before/after change alone is not attribution."
+  }
+]

@@ -1,0 +1,296 @@
+[
+  {
+    "id": "F1",
+    "title": "Economic decisions: Opportunity costs, economic rents, and incentives",
+    "publisher": "CORE Econ",
+    "url": "https://books.core-econ.org/the-economy/microeconomics/02-technology-incentives-02-economic-decisions.html",
+    "note": "2023. Next-best feasible alternative and direct-cost distinction; simplified valuation, not proof that every value is monetary."
+  },
+  {
+    "id": "F2",
+    "title": "How Individuals Make Choices Based on Their Budget Constraint",
+    "publisher": "OpenStax / Rice University",
+    "url": "https://openstax.org/books/principles-economics-3e/pages/2-1-how-individuals-make-choices-based-on-their-budget-constraint",
+    "note": "2022. Marginal and sunk-cost reasoning; simplified choices, not universal diminishing benefits or a complete account of behavior."
+  },
+  {
+    "id": "F3",
+    "title": "Economic models: How to see more by looking at less",
+    "publisher": "CORE Econ",
+    "url": "https://books.core-econ.org/the-economy/microeconomics/02-technology-incentives-08-economic-models.html",
+    "note": "2023. Models isolate mechanisms and assumptions; logical implications are not automatically empirical identification."
+  },
+  {
+    "id": "F4",
+    "title": "Pay for Performance and Beyond",
+    "publisher": "Bengt Holmström, Nobel lecture hosted by MIT Economics",
+    "url": "https://economics.mit.edu/research/publications/nobel-prize-lecture-pay-performance-and-beyond",
+    "note": "2016. Multitasking, measurement, incentives as a system; theoretical conditions matter, no universal bonus prescription. Read especially PDF pp.15–19."
+  },
+  {
+    "id": "F5",
+    "title": "A Fine Is a Price",
+    "publisher": "Uri Gneezy and Aldo Rustichini, Journal of Legal Studies; author copy at UC San Diego",
+    "url": "https://rady.ucsd.edu/_files/faculty-research/uri-gneezy/fine.pdf",
+    "note": "2000. A bounded fine intervention can change behavior unexpectedly; ten centers over twenty weeks, not a universal deterrence reversal. Read PDF pp.1–4."
+  },
+  {
+    "id": "F6",
+    "title": "Getting the work done: Contracts, principals, and agents",
+    "publisher": "CORE Econ",
+    "url": "https://books.core-econ.org/the-economy/microeconomics/06-firm-and-employees-06-contracts-principals-agents.html",
+    "note": "2023. Incomplete contracting and observable output; a model, not a moral description of employees or jurisdiction-specific legal advice."
+  },
+  {
+    "id": "F7",
+    "title": "Demand, Supply, and Equilibrium in Markets for Goods and Services",
+    "publisher": "OpenStax / Rice University",
+    "url": "https://openstax.org/books/principles-economics-3e/pages/3-1-demand-supply-and-equilibrium-in-markets-for-goods-and-services",
+    "note": "2022. Schedules, quantities, clearing; other things held equal, willingness/ability to pay is not moral need."
+  },
+  {
+    "id": "F8",
+    "title": "Shifts in Demand and Supply for Goods and Services",
+    "publisher": "OpenStax / Rice University",
+    "url": "https://openstax.org/books/principles-economics-3e/pages/3-2-shifts-in-demand-and-supply-for-goods-and-services",
+    "note": "2022. Movement versus shift; actual simultaneous changes may not identify one cause."
+  },
+  {
+    "id": "F9",
+    "title": "Supply, demand, and competitive equilibrium: Is this a good model?",
+    "publisher": "CORE Econ",
+    "url": "https://books.core-econ.org/the-economy/microeconomics/08-supply-demand-10-supply-demand-competitive-equilibrium.html",
+    "note": "2023. Price-taking benchmark and applicability conditions; idealized conditions need checking."
+  },
+  {
+    "id": "F10",
+    "title": "Price Elasticity of Demand and Price Elasticity of Supply",
+    "publisher": "OpenStax / Rice University",
+    "url": "https://openstax.org/books/principles-economics-3e/pages/5-1-price-elasticity-of-demand-and-price-elasticity-of-supply",
+    "note": "2022. Percentage responsiveness and midpoint convention; interval elasticity is not a constant for every price range."
+  },
+  {
+    "id": "F11",
+    "title": "Elasticity and Pricing",
+    "publisher": "OpenStax / Rice University",
+    "url": "https://openstax.org/books/principles-economics-3e/pages/5-3-elasticity-and-pricing",
+    "note": "2022. Revenue relationships and competitive tax incidence; do not reuse its cigarette-specific elasticities as universal or current estimates."
+  },
+  {
+    "id": "F12",
+    "title": "The effect of a tax",
+    "publisher": "CORE Econ",
+    "url": "https://books.core-econ.org/the-economy/microeconomics/08-supply-demand-12-effect-of-tax.html",
+    "note": "2023. Prices, quantities, and revenue in a tax model; per-unit and percentage taxes are distinct, welfare depends on included effects."
+  },
+  {
+    "id": "F13",
+    "title": "The external effects of pollution: Private and social costs and benefits",
+    "publisher": "CORE Econ",
+    "url": "https://books.core-econ.org/the-economy/microeconomics/10-market-successes-failures-02-pollution-effects.html",
+    "note": "2023. Private/external/social margins; monetary aggregation and uniqueness depend on assumptions, discussed explicitly in its extension."
+  },
+  {
+    "id": "F14",
+    "title": "Solving the problem: Regulation, taxation, and compensation",
+    "publisher": "CORE Econ",
+    "url": "https://books.core-econ.org/the-economy/microeconomics/10-market-successes-failures-04-regulation-taxation-compensation.html",
+    "note": "2023. Alternative responses, measurement and implementation limits; an efficient result can still be unfair."
+  },
+  {
+    "id": "F15",
+    "title": "Evaluating institutions and outcomes: Fairness",
+    "publisher": "CORE Econ",
+    "url": "https://books.core-econ.org/the-economy/microeconomics/05-the-rules-of-the-game-03-evaluating-institutions-outcomes.html",
+    "note": "2023. Separates Pareto comparisons and procedural/substantive fairness; values are not a uniquely scored optimum."
+  },
+  {
+    "id": "F16",
+    "title": "Beyond Markets and States: Polycentric Governance of Complex Economic Systems",
+    "publisher": "Elinor Ostrom; Indiana University Digital Library of the Commons",
+    "url": "https://dlc.dlib.indiana.edu/dlc/items/484f4147-bdce-4d55-9b8d-fe61f3b2d37b",
+    "note": "2009 revised lecture draft. Institutional diversity and fit to settings; source is marked revised draft, not a universal recipe or final journal text. Linked PDF read, especially pp.1–3 and25."
+  },
+  {
+    "id": "F17",
+    "title": "The Economics of Pollution",
+    "publisher": "OpenStax / Rice University",
+    "url": "https://openstax.org/books/principles-economics-3e/pages/12-1-the-economics-of-pollution",
+    "note": "2022. Positive and negative externalities; use conceptual distinctions, not its changing emissions statistics or historical examples as fresh estimates."
+  },
+  {
+    "id": "I1",
+    "title": "Public good games and cooperation (The Economy 2.0, §4.6)",
+    "publisher": "CORE Econ · 2023",
+    "url": "https://books.core-econ.org/the-economy/microeconomics/04-strategic-interactions-06-public-good-games.html",
+    "note": "Supports the distinction between a contribution's private return and its total benefit to a group in an explicit public-goods game. A monetary-payoff model is not proof that all people free-ride; preferences, communication and institutions can differ. Oikos numbers are fictional."
+  },
+  {
+    "id": "I2",
+    "title": "Public goods and bads, open access, and shared resources (The Economy 2.0, §10.7)",
+    "publisher": "CORE Econ · 2023",
+    "url": "https://books.core-econ.org/the-economy/microeconomics/10-market-successes-failures-07-open-access-shared-resources.html",
+    "note": "Supports rivalry, excludability and resource-governance distinctions. CORE sometimes uses public good for non-rival goods generally; Oikos explicitly uses pure public good for non-rival/non-excludable goods and club good when exclusion is feasible. Congestion and access technology can change classification. Government provision does not define a public good."
+  },
+  {
+    "id": "I3",
+    "title": "Beyond Markets and States: Polycentric Governance of Complex Economic Systems",
+    "publisher": "Elinor Ostrom · Nobel lecture 2009, published 2010 · university-hosted copy",
+    "url": "https://www.canr.msu.edu/fsp/outreach/presentations/ostrom_nobel_lecture_27_october_2016.pdf",
+    "note": "Primary lecture, particularly pp. 418–425: distinguishes common-pool resources from property regimes and examines participation, monitoring, locally fitted rules and conflict resolution. Evidence challenges inevitable commons collapse; it does not establish a universally best ownership form or a sufficient checklist. Original Nobel URL was blocked during this check; this Michigan State copy was opened."
+  },
+  {
+    "id": "I4",
+    "title": "Hidden attributes and adverse selection (The Economy 2.0, §10.10)",
+    "publisher": "CORE Econ · 2023",
+    "url": "https://books.core-econ.org/the-economy/microeconomics/10-market-successes-failures-10-hidden-attributes.html",
+    "note": "Supports how hidden quality can change which sellers participate at a pooled price. This is a conditional model, not a prediction that every second-hand or insurance market collapses. Verification, guarantees, reputation and participation conditions matter; hidden information is not itself evidence of dishonesty."
+  },
+  {
+    "id": "I5",
+    "title": "Principal–agent relationships, hidden actions, and incomplete contracts (The Economy 2.0, §10.8)",
+    "publisher": "CORE Econ · 2023",
+    "url": "https://books.core-econ.org/the-economy/microeconomics/10-market-successes-failures-08-principal-agent-relationships.html",
+    "note": "Supports hidden-action and unverifiability problems when interests differ and actions affect another party. Moral hazard names an incentive/information problem, not a moral diagnosis. A bad result alone does not reveal effort or intent. Model assumptions about worker preferences must not be asserted as facts about all workers."
+  },
+  {
+    "id": "I6",
+    "title": "Influencing market power, and competition policy (The Economy 2.0, §7.12)",
+    "publisher": "CORE Econ · 2023",
+    "url": "https://books.core-econ.org/the-economy/microeconomics/07-firm-and-customers-12-influencing-market-power.html",
+    "note": "Supports examining substitutes, entry, exclusion and potential efficiencies when assessing market power. High share alone is not a complete diagnosis or a legal verdict. Historical examples are not current legal guidance. Oikos compares stated fictional prices, quantities and costs, not inferred market-wide welfare from revenue alone."
+  },
+  {
+    "id": "I7",
+    "title": "Monopsony and concentration in the labour market, chapter 3",
+    "publisher": "OECD Employment Outlook · 2022",
+    "url": "https://www.oecd.org/content/dam/oecd/en/publications/reports/2022/09/oecd-employment-outlook-2022_7a5a73b3/1bb305a6-en.pdf",
+    "note": "Supports employer wage-setting power through concentration, search frictions and differentiated job conditions. Concentration is an imperfect proxy; countervailing worker power matters. Empirical magnitudes vary by market and method. A minimum wage can increase employment in some monopsony models, but neither a positive nor negative effect is universal. No dated concentration thresholds are taught as current law."
+  },
+  {
+    "id": "I8",
+    "title": "Pay for Performance and Beyond",
+    "publisher": "Bengt Holmström · Nobel lecture 2016",
+    "url": "https://www.nobelprize.org/uploads/2018/06/holmstrom-lecture.pdf",
+    "note": "Primary lecture supports the interaction of incentives, risk, measurement and multiple tasks, especially section IV on multitasking. Rewarding a measured task can displace valuable competing work; weaker explicit rewards can sometimes help. This is conditional theory and institutional analysis, not a claim that all bonuses fail or fixed pay always works."
+  },
+  {
+    "id": "I9",
+    "title": "Categorizing Variants of Goodhart's Law",
+    "publisher": "David Manheim and Scott Garrabrant · arXiv preprint, first posted 2018",
+    "url": "https://arxiv.org/abs/1803.04585",
+    "note": "Primary conceptual treatment distinguishes ways optimization can separate a proxy from its goal, including selection on noise and strategic responses. Use as a diagnostic warning, not a universal empirical law or proof that measurement becomes useless. The live page includes a later revision; the catchy popular aphorism is not quoted as Goodhart's original wording."
+  },
+  {
+    "id": "I10",
+    "title": "Evaluating institutions and outcomes: Fairness (The Economy 2.0, §5.3)",
+    "publisher": "CORE Econ · 2023",
+    "url": "https://books.core-econ.org/the-economy/microeconomics/05-the-rules-of-the-game-03-evaluating-institutions-outcomes.html",
+    "note": "Supports separating Pareto comparisons from substantive and procedural judgments of fairness. Equal shares, need, contribution, rights and procedure can give different assessments. Oikos can score recognition or application of an explicitly agreed criterion, not select one conception of justice as universally correct."
+  },
+  {
+    "id": "I11",
+    "title": "Evaluating outcomes: The Pareto criterion (The Economy 2.0, §4.5)",
+    "publisher": "CORE Econ · 2023",
+    "url": "https://books.core-econ.org/the-economy/microeconomics/04-strategic-interactions-05-pareto-criterion.html",
+    "note": "Supports Pareto improvement and efficiency as distinct concepts. The criterion often leaves allocations unranked and does not establish fairness. A larger total monetary surplus is not automatically a Pareto improvement; potential compensation must not be mistaken for compensation actually paid."
+  },
+  {
+    "id": "I12",
+    "title": "Measuring economic inequality: The Gini coefficient (The Economy 2.0, §5.12)",
+    "publisher": "CORE Econ · 2023",
+    "url": "https://books.core-econ.org/the-economy/microeconomics/05-the-rules-of-the-game-12-measuring-economic-inequality.html",
+    "note": "Supports examining a distribution rather than its total alone. Any numerical comparison must specify income versus wealth, population and period. Do not infer poverty or procedural fairness from one inequality index. The page uses a small-population Gini normalization; Oikos avoids Gini calculation drills unless that convention is explicitly taught."
+  },
+  {
+    "id": "I13",
+    "title": "The Green Book: Appraisal and evaluation in central government",
+    "publisher": "HM Treasury · 2026 edition",
+    "url": "https://www.gov.uk/government/publications/the-green-book--2/the-green-book-2026",
+    "note": "Supports comparing options, social resource costs, non-monetised effects, distribution, uncertainty and public budgets separately. Transfers between included parties are not themselves additional resource production; administration and behaviour can create real costs. UK appraisal guidance is not a universal ethical ranking or a legal rule for learners in other jurisdictions."
+  },
+  {
+    "id": "I14",
+    "title": "Magenta Book: Central Government guidance on evaluation",
+    "publisher": "HM Treasury and Evaluation Task Force · 2026 edition",
+    "url": "https://www.gov.uk/government/publications/the-magenta-book/magenta-book-central-government-guidance-on-evaluation-html",
+    "note": "Supports planning evaluation early, counterfactual reasoning, process/impact/value-for-money questions, and context-specific causal assumptions. Randomisation reduces selection bias but does not guarantee balance, perfect implementation or universal transfer. A difference-in-differences calculation requires assumptions about the untreated trend; before/after change alone is not attribution."
+  },
+  {
+    "id": "E1",
+    "title": "Philosophy of Economics",
+    "publisher": "Stanford Encyclopedia of Philosophy — Daniel Hausman, revised 2018",
+    "url": "https://plato.stanford.edu/entries/economics/",
+    "note": "Authoritative overview, especially sections 2.1, 2.4 and 6: descriptive/normative distinctions, idealization, welfare and efficiency. Not empirical proof of a preferred policy."
+  },
+  {
+    "id": "E2",
+    "title": "Gross Domestic Product: learning guide",
+    "publisher": "US Bureau of Economic Analysis",
+    "url": "https://www.bea.gov/resources/learning-center/what-to-know-gdp",
+    "note": "Official explanation of domestic production and real/nominal GDP. GDP is not household disposable income or a complete welfare measure."
+  },
+  {
+    "id": "E3",
+    "title": "Beyond GDP: Measuring What Counts for Economic and Social Performance",
+    "publisher": "OECD — Stiglitz, Fitoussi and Durand, 2018",
+    "url": "https://www.oecd.org/en/publications/2018/11/beyond-gdp_g1g98ae6.html",
+    "note": "Expert report on complementing GDP with distribution and sustainability indicators. Choosing indicators and priorities involves judgment."
+  },
+  {
+    "id": "E4",
+    "title": "The Possibility of Social Choice",
+    "publisher": "American Economic Review 89(3), 1999 — Amartya Sen; published paper hosted by NC State",
+    "url": "https://www.csc2.ncsu.edu/faculty/mpsingh/local/Social/f16/wrap/readings/Amartya-Sen-Nobel-AER-1999.pdf",
+    "note": "Primary Nobel lecture on the informational basis of social evaluation, distribution and liberty. Does not supply a uniquely correct allocation."
+  },
+  {
+    "id": "E5",
+    "title": "When and Why Incentives (Don't) Work to Modify Behavior",
+    "publisher": "Journal of Economic Perspectives 25(4), 2011 — Gneezy, Meier and Rey-Biel; Columbia-hosted paper",
+    "url": "https://business.columbia.edu/sites/default/files-efs/pubfiles/5133/GneezyMeierRey_JEP.pdf",
+    "note": "Research synthesis: incentive effects depend on design, information, social meaning and time horizon. Neither universal success nor universal crowding-out follows."
+  },
+  {
+    "id": "E6",
+    "title": "A Fine Is a Price",
+    "publisher": "Journal of Legal Studies 29(1), 2000 — Gneezy and Rustichini; author copy at UC San Diego",
+    "url": "https://rady.ucsd.edu/_files/faculty-research/uri-gneezy/fine.pdf",
+    "note": "Primary field study in ten private Haifa day-care centers in 1998. A particular late-pickup fine increased lateness; do not generalize to all fines or treat the proposed mechanism as separately established."
+  },
+  {
+    "id": "E7",
+    "title": "Categorizing Variants of Goodhart's Law",
+    "publisher": "Manheim and Garrabrant — arXiv, 2018, revised 2019",
+    "url": "https://arxiv.org/abs/1803.04585",
+    "note": "Conceptual preprint distinguishing proxy-optimization failure mechanisms, not a causal field study or proof that all metrics fail."
+  },
+  {
+    "id": "E8",
+    "title": "Using Randomization in Development Economics Research: A Toolkit",
+    "publisher": "Duflo, Glennerster and Kremer — December 2006 methods chapter draft, J-PAL",
+    "url": "https://www.povertyactionlab.org/sites/default/files/research-paper/Using-Randomization-in-Development-Economics.pdf",
+    "note": "Primary methodology on random assignment, selection bias, compliance, spillovers, attrition and generalization. Randomization does not remove every inference problem."
+  },
+  {
+    "id": "E9",
+    "title": "Understanding and Misunderstanding Randomized Controlled Trials",
+    "publisher": "Deaton and Cartwright — October 2017 author version, published Social Science & Medicine 210 (2018)",
+    "url": "https://www.princeton.edu/~deaton/downloads/Deaton_Cartwright_RCTs_Oct-1-2017.pdf",
+    "note": "Primary methodological critique: sample precision, exact balance, mechanism and transport require attention. Read with E8 rather than as rejection of trials."
+  },
+  {
+    "id": "E10",
+    "title": "Beyond Markets and States: Polycentric Governance of Complex Economic Systems",
+    "publisher": "American Economic Review 100(3), 2010 — Elinor Ostrom",
+    "url": "https://www.aeaweb.org/articles?id=10.1257/aer.100.3.641",
+    "note": "Primary research synthesis on institutions and shared-resource governance; published record verified and author Nobel-lecture draft consulted at Indiana University. No universal institutional solution or inevitable free-riding claim."
+  },
+  {
+    "id": "E11",
+    "title": "Guidelines for Preparing Economic Analyses, third edition",
+    "publisher": "US Environmental Protection Agency, 2024",
+    "url": "https://www.epa.gov/environmental-economics/guidelines-preparing-economic-analyses-3rd-edition",
+    "note": "Official analytical methodology on baselines, externalities, timing, uncertainty, distribution and nonmonetized effects. Used for distinctions, not legal or current-policy prescriptions."
+  }
+]

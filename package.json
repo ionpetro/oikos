@@ -1,0 +1,13 @@
+{
+  "name": "oikos",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Economics and incentives: rewards, hidden costs, and the rules that shape behavior.",
+  "license": "MIT",
+  "scripts": {
+    "test": "node --test app/test/*.test.js",
+    "validate": "node app/tools/validate.js",
+    "build": "node app/build.mjs",
+    "dev": "python3 -m http.server 4390 --bind 127.0.0.1 --directory dist"
+  }
+}
