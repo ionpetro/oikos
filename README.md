@@ -86,6 +86,6 @@ The inherited framework has been adapted for economics: explicit model provenanc
 
 ## Progress and privacy
 
-Browser-local progress is isolated from Agora and the other courses. Export/import in Me backs up progress and reflections. There is no application analytics, live AI grading or cross-device synchronization. Fonts load from Google Fonts with local fallbacks. Private hosting may require ChatGPT sign-in; that does not synchronize learning data.
+Browser-local progress is isolated from Agora and the other courses. Export/import in Me backs up progress and reflections. The production website sends visit and learning events to PostHog for Pulse, without typed text or recordings. There is no live AI grading or cross-device synchronization. Fonts load from Google Fonts with local fallbacks. Private hosting may require ChatGPT sign-in; that does not synchronize learning data.
 
 MIT licensed. The source and delivery settings for this new experience are separate from every existing course. `.openai/hosting.json` identifies its own private Site.

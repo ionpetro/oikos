@@ -16,8 +16,8 @@
   const LETTERS = ["A", "B", "C", "D"];
   const mmss = (ms) => { const s = Math.max(0, Math.round(ms / 1000)); return `${Math.floor(s / 60)}:${String(s % 60).padStart(2, "0")}`; };
 
-  /** Product analytics. Only the public website loads PostHog (see site.mjs); elsewhere this does nothing. */
-  function track() { /* This local-first edition has no analytics. */ }
+  /** Explicit learning analytics on the production website only. */
+  function track(event, props = {}) { try { window.PulseAnalytics?.track(event, props); } catch { /* optional */ } }
   // ---------- sister apps ----------
   /** The family of free, open-source learning apps. Keep this list the same in Skepsis, Carpe, Gnothi, Objection, Agora and Oikos (app.js and site.mjs). */
   const FAMILY = [
@@ -33,7 +33,7 @@
   const sisterNote = () => `<p class="sister">More free, open-source apps like this: ${sisterLinks()}</p>`;
   const REPO = "https://github.com/ionpetro/oikos";
   const ghLink = (cls, where, inner, label) => (REPO ? `<a class="${cls}" href="${REPO}" target="_blank" rel="noopener" data-gh="${where}" aria-label="${label || "The Oikos code on GitHub"}" title="${label || "The Oikos code on GitHub"}">${inner}</a>` : "");
-  const FREE_NOTE = "Oikos is free and always will be. The code is open (MIT). No account, no ads, no app analytics. Your progress and reflections stay in this browser; export a backup from Me to keep them.";
+  const FREE_NOTE = "Oikos is free and always will be. The code is open (MIT). No account, no ads. PostHog counts visits and learning activity, without recordings or typed text. Your progress and reflections stay in this browser; export a backup from Me to keep them.";
 
   // ---------- GitHub star prompt ----------
   // Asked on the lesson-finished screen, never as a pop-up (same rules as Skepsis): ask after the
@@ -159,8 +159,8 @@
       accuracy_all: S.answered ? Math.round((S.correct / S.answered) * 100) / 100 : null, days_active: Object.keys(S.days || {}).length,
       cross_exam_best: S.crossExamBest, mocks_taken: (S.mocks || []).length, onboarded: !!S.onboarded, sits: S.sits, focus: S.focus || null, rank: E.rankOf(S).rank.id };
   }
-  function syncProgress() {}
-  function trackAppOpened() {}
+  function syncProgress() { /* Progress remains in local storage; events carry only selected metrics. */ }
+  function trackAppOpened() { /* analytics.js records one app_opened per page load. */ }
   function trackDayProgress(prevTodayXp, st) {
     const now = S.days[today()] || 0;
     if (prevTodayXp < S.goal && now >= S.goal) track("daily_goal_reached", { goal_xp: S.goal, today_xp: now });

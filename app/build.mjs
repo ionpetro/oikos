@@ -13,6 +13,7 @@ if (units.length!==12) throw new Error(`Expected 12 units, found ${units.length}
 let html=read('src/shell.html');
 for(const [k,v] of Object.entries({STYLE:read('src/style.css'),UNITS:unitCode,SOURCES:json(sources),MODELS:read('src/models.js'),ENGINE:read('src/engine.js'),APP:read('src/app.js')})) html=html.replace('/*'+k+'*/',()=>v);
 if (/\/\*(?:STYLE|UNITS|SOURCES|MODELS|ENGINE|APP)\*\//.test(html)) throw new Error('Unfilled build marker');
+html=html.replace('</head>', () => '<script>'+read('src/analytics.js')+'</script></head>');
 mkdirSync(out,{recursive:true});writeFileSync(path.join(out,'index.html'),html);
 for(const file of readdirSync(path.join(app,'assets')))copyFileSync(path.join(app,'assets',file),path.join(out,file));
 writeFileSync(path.join(out,'manifest.webmanifest'),JSON.stringify({name:'Oikos — Economics & incentives',short_name:'Oikos',start_url:'./',display:'standalone',background_color:'#f6f1e7',theme_color:'#285447',icons:[{src:'./icon.svg',sizes:'any',type:'image/svg+xml',purpose:'any'}]}));
