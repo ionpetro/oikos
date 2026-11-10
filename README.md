@@ -8,7 +8,7 @@ An economics-and-incentives learning experience, with ethics throughout. Oikos i
 
 Oikos is free and open source (MIT). **If it helps you, please [star the repo](https://github.com/ionpetro/oikos)**: a star helps other people find it. Corrections and pull requests are welcome.
 
-Oikos is one of six free, open-source learning apps built the same way (short daily lessons, spaced review, no account):
+Oikos is one of eight free, open-source learning apps built the same way (short daily lessons and spaced review):
 
 - **Skepsis**: the Greek hiding in everyday English. [Play](https://skepsis-greek.vercel.app) · [GitHub](https://github.com/ionpetro/skepsis)
 - **Carpe**: Latin for Greece's national exams. [Play](https://carpe-latin.vercel.app) · [GitHub](https://github.com/ionpetro/carpe)
@@ -16,6 +16,8 @@ Oikos is one of six free, open-source learning apps built the same way (short da
 - **Objection**: prep for the US bar exam (MBE). [Play](https://objection-bar.vercel.app) · [GitHub](https://github.com/ionpetro/objection)
 - **Agora**: sales and negotiation, with ethics. [Play](https://agora-sales-xi.vercel.app) · [GitHub](https://github.com/ionpetro/agora)
 - **Oikos** (this one): economics and incentives. [Play](https://oikos-azure-five.vercel.app) · [GitHub](https://github.com/ionpetro/oikos)
+- **Guanxi**: Mandarin and local culture. [Play](https://guanxi-mandarin.vercel.app) · [GitHub](https://github.com/ionpetro/guanxi)
+- **Everyday Ethics**: everyday choices and ethical judgment. [Private preview](https://everyday-ethics-ion.wintrypenny4.chatgpt.site) · [GitHub](https://github.com/ionpetro/everyday-ethics)
 
 ## Run locally
 
