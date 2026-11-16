@@ -1,5 +1,5 @@
 const fs=require('node:fs'),vm=require('node:vm'),assert=require('node:assert/strict');
-for(const [folder,app,hostname] of [['oikos', 'oikos', 'oikos-azure-five.vercel.app']]){
+for(const [folder,app,hostname] of [['oikos', 'oikos', 'oikos.tryskepsis.com']]){
  const source=fs.readFileSync(require('node:path').join(__dirname,'../src/analytics.js'),'utf8');
  function setup(host,stored){const storage=new Map(stored||[]);const c={location:{hostname:host},document:{referrer:'https://example.com/private?secret=test',createElement:()=>({}),getElementsByTagName:()=>[{parentNode:{insertBefore(){}}}]},URL,localStorage:{getItem:k=>storage.get(k)||null,setItem:(k,v)=>storage.set(k,v)}};c.window=c;vm.runInNewContext(source,c);return{c,storage};}
  const local=setup('localhost').c;assert.equal(local.PulseAnalytics,undefined);
