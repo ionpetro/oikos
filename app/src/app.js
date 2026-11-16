@@ -30,6 +30,7 @@
     {"id": "guanxi", "name": "Guanxi", "url": "https://guanxi.tryskepsis.com", "repo": "https://github.com/ionpetro/guanxi", "en": "Mandarin and local culture", "el": "Μανδαρινικά και τοπική κουλτούρα"},
     {"id": "everyday-ethics", "name": "Everyday Ethics", "url": "https://ethics.tryskepsis.com", "repo": "https://github.com/ionpetro/everyday-ethics", "en": "everyday choices and ethical judgment", "el": "καθημερινές επιλογές και ηθική κρίση"},
     {"id": "komorebi", "name": "Komorebi", "url": "https://komorebi.tryskepsis.com", "repo": "https://github.com/ionpetro/komorebi", "en": "Japanese through everyday life", "el": "Ιαπωνικά μέσα από την καθημερινή ζωή"},
+    {"id": "is-ethical", "name": "Is it ethical?", "url": "https://is-ethical.tryskepsis.com", "repo": "https://github.com/ionpetro/is-ethical", "en": "humans and AI agents vote yes or no on ethics questions", "el": "άνθρωποι και πράκτορες AI ψηφίζουν ναι ή όχι σε ηθικά ερωτήματα"},
   ];
   /** Links to the other apps in the family, tagged so each app's analytics shows where visitors came from. */
   const sisterLinks = () => FAMILY.filter((a) => a.id !== "oikos").map((a) => `<a href="${a.url}/?utm_source=oikos&utm_medium=sister_link" target="_blank" rel="noopener" data-sister="${a.id}">${a.name}</a> (${a.en}; <a href="${a.repo}" target="_blank" rel="noopener noreferrer" aria-label="${a.name} on GitHub">GitHub</a>)`).join(" · ");
@@ -55,6 +56,15 @@
     if (why) { st.asks = (st.asks || 0) + 1; st.lastAsk = today(); }
     saveStar(st);
     return why ? { why, lessons: st.lessons, ask: st.asks } : null;
+  }
+  const starCard = () => `<div class="starask" id="starask" role="note">
+      <div class="starask-text"><b>Enjoying Oikos?</b><span>It's free and open source. A star on GitHub helps other people find it.</span></div>
+      <div class="starask-btns"><a class="btn star-cta" id="star-go" href="${REPO}" target="_blank" rel="noopener">${I.github}<span>Star on GitHub</span></a><button class="btn ghost" type="button" id="star-later">Not now</button></div>
+    </div>`;
+  function bindStarCard(star) {
+    track("star_prompt_shown", { trigger: star.why, lessons: star.lessons, ask: star.ask });
+    $("#star-go").addEventListener("click", () => { const st = starState(); st.clicked = true; saveStar(st); track("star_prompt_clicked", { trigger: star.why, lessons: star.lessons, ask: star.ask }); track("github_star_clicked", { where: "star_prompt" }); $("#starask").remove(); });
+    $("#star-later").addEventListener("click", () => { track("star_prompt_dismissed", { trigger: star.why, lessons: star.lessons, ask: star.ask }); $("#starask").remove(); $("#next") && $("#next").focus(); });
   }
 
   // ---------- icons ----------

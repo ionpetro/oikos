@@ -267,6 +267,7 @@ const Engine = (() => {
    * drops only one box on a miss and still promotes on a hit. `trap` records the distractor type chosen.
    */
   function grade(s, id, correct, today, { weight = 1, trap = null } = {}) {
+    const fresh = !s.items[id], wasDue = fresh || s.items[id].due <= today;
     learn(s, id, today);
     const it = s.items[id];
     if (correct) {
@@ -277,7 +278,8 @@ const Engine = (() => {
       it.box = weight < 1 ? Math.max(1, it.box - 1) : 1;
       if (trap) recordTrap(s, id, trap, today);
     }
-    it.due = capDue(s, addDays(today, INTERVALS[it.box - 1]), today);
+    // Early correct practice never postpones a review: only a miss, a due card or a new card is rescheduled.
+    if (!correct || wasDue) it.due = capDue(s, addDays(today, INTERVALS[it.box - 1]), today);
   }
   /** The distractor type the learner fell for, on the item and in the course-wide log. */
   function recordTrap(s, id, trap, today) {
@@ -819,7 +821,8 @@ const Engine = (() => {
         if (s && it.rule) { const unseen = ix.siblings(it.rule).filter((h) => h.id !== it.id && !s.items[h.id] && drillable(h)); if (unseen.length) target = unseen[Math.floor(roll * unseen.length)]; }
         if (target === it && roll < 0.2) return qFind(ix, it, r) || qHypo(ix, it, r, { label: L.review });
         const q = (target.grid && roll > 0.7 && qGrid(ix, target, r)) || qHypo(ix, target, r);
-        return { ...q, label: target === it ? L.review : L.transfer };
+        // grade the due card (it.id): the sibling only supplies fresh facts, it was never taught
+        return { ...q, itemId: it.id, shownId: target.id, label: target === it ? L.review : L.transfer };
       }
       case "argue": return qArgue(ix, it, r);
       case "steps": return roll < 0.6 || !it.applyTo ? qStepsBuild(ix, it, r) : qStepsApply(ix, it, r);
