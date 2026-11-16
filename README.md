@@ -8,7 +8,7 @@ An economics-and-incentives learning experience, with ethics throughout. Oikos i
 
 Oikos is free and open source (MIT). **If it helps you, please [star the repo](https://github.com/ionpetro/oikos)**: a star helps other people find it. Corrections and pull requests are welcome.
 
-Oikos is one of eight free, open-source learning apps built the same way (short daily lessons and spaced review):
+Oikos is one of nine free, open-source learning apps built the same way (short daily lessons and spaced review):
 
 | | App | What it teaches | Links |
 |:-:|---|---|---|
@@ -20,6 +20,7 @@ Oikos is one of eight free, open-source learning apps built the same way (short 
 | <img src="https://oikos.tryskepsis.com/icon.svg" width="40" height="40" alt="Oikos logo"> | **Oikos** (this one) | economics and incentives | [Play](https://oikos.tryskepsis.com) · [GitHub](https://github.com/ionpetro/oikos) |
 | <img src="https://guanxi.tryskepsis.com/icon.svg" width="40" height="40" alt="Guanxi logo"> | **Guanxi** | Mandarin and local culture | [Play](https://guanxi.tryskepsis.com) · [GitHub](https://github.com/ionpetro/guanxi) |
 | <img src="https://ethics.tryskepsis.com/icon.svg" width="40" height="40" alt="Everyday Ethics logo"> | **Everyday Ethics** | everyday choices and ethical judgment | [Play](https://ethics.tryskepsis.com) · [GitHub](https://github.com/ionpetro/everyday-ethics) |
+| <img src="https://komorebi.tryskepsis.com/icon.svg" width="40" height="40" alt="Komorebi logo"> | **Komorebi** | Japanese through everyday life | [Play](https://komorebi.tryskepsis.com) · [GitHub](https://github.com/ionpetro/komorebi) |
 
 ## Run locally
 
