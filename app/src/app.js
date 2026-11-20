@@ -246,6 +246,14 @@
   function siteNote() { return `<footer class="sitenote">${sisterNote()}<p><b>${FREE_NOTE}</b></p>${ghLink("btn ghost gh-cta", "footer", `${I.github}<span>Star it on GitHub</span>`)}<p class="sitenote-sub">A star helps other people find it.</p><p>Economics and incentives, with ethics in every unit. Models state their assumptions; cases and quantities are fictional. Every card links its sources. XP measures practice, not your character.</p></footer>`; }
 
   function render() {
+    // First visit: skip the name/goal form and open lesson 1 (Skepsis did this on 2026-11-17; the
+    // form lost most new visitors before they saw any content). Name and goal keep their defaults
+    // and stay editable in settings. A deep link (#tab) still shows the form, as before.
+    if (!S.onboarded && !location.hash.slice(1)) {
+      S.onboarded = true; save(); track("onboarding_completed", { goal: S.goal, auto: true });
+      const first = E.nextNode(IX, S);
+      if (first) { welcomePending = true; startNode(first); welcomePending = false; return; }
+    }
     if (!S.onboarded) { app().innerHTML = topbar() + onboarding(); bindOnboarding(); return; }
     const body = { learn: learnView, lex: lexView, me: meView }[ui.tab]();
     app().innerHTML = topbar() + `<main class="view">${body}${siteNote()}</main>` + tabbar();
@@ -533,7 +541,14 @@
     box.addEventListener("click", (e) => { if (e.target === box) dismissQuit(); });
     $("#quit-stay").focus();
   }
+  /** First screen of the auto-started first lesson: who we are and what this is (the skipped onboarding's blurb). */
+  let welcomePending = false, welcomeRun = null;
+  function welcomeBubble() {
+    return `<section class="hero welcome">${mascot("happy")}<div class="bubble"><b>Oikos.</b> I'm Pip. Let's explore what gets rewarded, who bears hidden costs, and how the rules change our choices. Short sittings, fresh situations, and room to get it wrong. No hearts, no penalties, and weekends never break a streak. <span class="muted">No sign-up.</span></div></section>`;
+  }
   function shell(inner, footer = "") {
+    if (welcomePending && run) { welcomeRun = run; welcomePending = false; }
+    if (run && run === welcomeRun && run.i === 0) inner = welcomeBubble() + inner;
     let o = $(".lesson");
     if (!o) { o = document.createElement("div"); o.className = "lesson"; o.setAttribute("role", "dialog"); o.setAttribute("aria-modal", "true"); o.setAttribute("aria-label", "Oikos practice"); app().inert = true; document.body.appendChild(o); document.body.classList.add("run-open"); }
     const prog = run.mode === "cross" ? 100 : run.steps.length ? (run.i / run.steps.length) * 100 : 0;

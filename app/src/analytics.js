@@ -16,7 +16,7 @@
       return event;
     }
   });
-  posthog.register({app: "oikos", surface: "web"});
+  posthog.register({app: "oikos", surface: "web",likely_bot:typeof navigator!=="undefined"&&!!(navigator.webdriver||/bot|crawl|spider|headless|facebookexternalhit/i.test(navigator.userAgent)||(typeof screen!=="undefined"&&screen.width===800&&screen.height===600))});
   const allowed = new Set(["mode", "node_id", "lesson_id", "unit_id", "steps", "step_index", "q_type", "item_id", "correct", "score", "graded", "ms", "seconds", "accuracy", "perfect", "misses", "xp", "streak", "best_streak", "goal_xp", "today_xp", "lessons_done", "answered", "days_active", "onboarded", "first_visit", "first_source", "goal", "tab", "requeued"]);
   const track = (event, props = {}) => {
     const safe = {};
